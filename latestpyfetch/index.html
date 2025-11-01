@@ -22,8 +22,10 @@
   </header>
 
   <main>
-    <h2>PyFetch v1.1</h2>
-    <h1>Basic to Ultimate</h1>
+    <header1>
+      <h2>PyFetch v1.1</h2>
+      <h1>Basic to Ultimate</h1>
+    </header1>
     <p>As always, every new version of PyFetch will need to be better than its previous version. So, this update will bring one of the most important features ever.<p>
 
     <h2>New flags feature</h2>
@@ -48,8 +50,18 @@
         <li>Plugin Guard created to make sure PyFetch Plugins doesn't brick anything</li>
         <li>Permission Roles for plugins</li>
     </ul>
+    <script>
+      function handleClick(button) {
+        const link = button.getAttribute('data-link');
+        if (link) {
+          window.location.href = link;
+        } else {
+          alert('Button clicked!');
+        }
+      }
+    </script>
     <h3>If your a developer and interested in making a PyFetch Plugin?</h3>
-    <p>Download the plugin template <a href="https://github.com/linuxaddict124/pyfetch/releases/download/v1.1.0/example_plugin.zip" target="_blank">here.</a></p>
+    <button onclick="handleClick(this)" data-link="https://github.com/linuxaddict124/pyfetch/releases/download/v1.1.0/example_plugin.zip">Download Here.</button>
     </main>
 
     <footer>
