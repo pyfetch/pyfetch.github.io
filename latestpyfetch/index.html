@@ -23,47 +23,16 @@
 
   <main>
     <header1>
-      <h2>PyFetch v1.1</h2>
-      <h1>Basic to Ultimate</h1>
+      <h2>PyFetch v1.2</h2>
+      <h1>PyPersonalization</h1>
     </header1>
-    <p>As always, every new version of PyFetch will need to be better than its previous version. So, this update will bring one of the most important features ever.<p>
+    <p>PyFetch v1.2 will be bringing features that should've came with v1.0. It's more of personalization.<p>
 
-    <h2>New flags feature</h2>
-    <p>So, this feature never actually been added before v1.0. Why you may ask? Because I did not have the idea to add the feature when I was creating it. Not even in v1.0.2! If you want to see the flags, run <code>pyfetch --help</code> or <code>pyfetch --h</code>.</p>
-    <h3>List of flags</h3>
-    <ul>
-        <li>-h, --help - Show a help message for the list of PyFetch flags</li>
-        <li>--minimal - Show minimal output</li>
-        <li>--banner - Show banner ONLY</li>
-        <li>--version - Version of PyFetch</li>
-        <li>--shell - View your bash version</li>
-        <li>--skipconfig - Skip pyfetch.conf</li>
-        <li>--noplugins - Exclude Plugins</li>
-        <li>--list-plugins - List all available plugins</li>
-    </ul>
-
-    <h2>New PyFetch Plugins feature</h2>
-    <p>Hate how limited Vanilla PyFetch is? Well now you have plugins! Plugins are packages that modifies how the software works. You can use Plugins to expand the software as long as it supports it. PyFetch is already customizable like having a config file, but why not add something as simple as a plugin feature?</p>
-    <h3>Other features for PyFetch Plugins added on PyFetch</h3>
-    <ul>
-        <li>Traceback imported</li>
-        <li>Plugin Guard created to make sure PyFetch Plugins doesn't brick anything</li>
-        <li>Permission Roles for plugins</li>
-    </ul>
-    <script>
-      function handleClick(button) {
-        const link = button.getAttribute('data-link');
-        if (link) {
-          window.location.href = link;
-        } else {
-          alert('Button clicked!');
-        }
-      }
-    </script>
-    <h3>If your a developer and interested in making a PyFetch Plugin?</h3>
-    <p>It's easy on how to make a PyFetch Plugin. Just download a plugin template then start modifying it to your liking. You can even share it with people!</p>
-    <button onclick="handleClick(this)" data-link="https://github.com/linuxaddict124/pyfetch/releases/download/v1.1.0/example_plugin.zip">Download Here.</button>
-    </main>
+    <h2>New profiles feature</h2>
+    <p>The profiles feature is about giving users seperate config files. Like for example, if you create a profile named "Work", it will be saved as <code>~/.config/pyfetch/profiles/Work.ini</code>. This is useful if you want to use a seperate config file, test a config file, or just mess around with a config file.</p>
+    <h3>Why should I use the feature?</h3>
+    <p>Because profiles are the same as <code>pyfetch.conf</code>, but instead more portable. It's not like you're able to use the config file outside of <code>~/.config/pyfetch/profiles</code> (That is a future feature), but it's still techinically portable. You can share it like your <code>pyfetch.conf</code> while you can keep using your main config file.</p>
+  </main>
 
     <footer>
         <p>Created by LinuxAddict124 | MIT License</p>
